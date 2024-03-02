@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              alfarruq: "black",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Bella Onojie</title>
+  </head>
+  <body>
+    <header
+      class="mx-auto px-[70px] h-28 items-center w-[1440px] flex justify-between"
+    >
+      <a href="/"><img src="./imgs/logo.png" alt="Bella Onojie logo" /></a>
+      <ul class="flex gap-[50px] font-semibold font-sans text-alfarruq">
+        <li><a class="hover:text-orange-700" href="/">Home</a></li>
+        <li><a class="hover:text-orange-700" href="/">Product</a></li>
+        <li><a class="hover:text-orange-700" href="/">About</a></li>
+        <li><a class="hover:text-orange-700" href="/">Contact</a></li>
+      </ul>
+    </header>
+    <main class="mx-auto w-[1440px]">
+      <section
+        class="text-center flex flex-col gap-8 text-white justify-center h-[619px] bg-[url(./imgs/bg-img.png)]"
+      >
+        <h3 class="font-bold font text-2xl">Food app</h3>
+        <h1 class="font-bold text-6xl leading-[80px]">
+          Why stay hungry when <br />
+          you can order form Bella Onojie
+        </h1>
+        <p class="text-2xl">Download the bella onoje’s food app now on</p>
+        <div class="flex gap-9 justify-center">
+          <button
+            class="bg-orange-600 px-8 rounded-3xl py-3 transition font-bold hover:bg-orange-500 cursor-pointer"
+          >
+            Playstore
+          </button>
+          <button
+            class="px-8 rounded-3xl py-3 transition font-bold border-solid border-2 hover:scale-[1.01] cursor-pointer"
+          >
+            App Store
+          </button>
+        </div>
+      </section>
+      <section class="px-40 flex flex-col items-center">
+        <img
+          class="-translate-y-[230px] border-b-2 border-solid border-inherit"
+          src="./imgs/foodAndEvery.png"
+          alt="food end everyane"
+        />
+        <h2 class="text-black font-bold text-5xl">How the app works</h2>
+        <div class="flex justify-between items-center">
+          <img class="-translate-x-32" src="./imgs/Phone.png" alt="Phone" />
+          <div class="flex flex-col gap-2">
+            <h5 class="w-[561px] font-bold text-orange-600 text-2xl">
+              Create an account
+            </h5>
+            <h3 class="font-bold text-[40px]">
+              Create/login to an existing <br />
+              account to get started
+            </h3>
+            <p class="text-2xl">
+              An account is created with your email and a desired password
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-between items-center">
+          <div class="flex flex-col gap-2">
+            <h5 class="w-[561px] font-bold text-orange-600 text-2xl">
+              Explore varieties
+            </h5>
+            <h3 class="font-bold text-[40px]">
+              Shop for your favorites meal as e dey hot.
+            </h3>
+            <p class="text-2xl">
+              Shop for your favorite meals or drinks and enjoy while doing it.
+            </p>
+          </div>
+          <img class="translate-x-32" src="./imgs/phone2.png" alt="Phone" />
+        </div>
+        <div class="flex justify-between items-center">
+          <img class="-translate-x-32" src="./imgs/phone3.png" alt="Phone" />
+          <div class="flex flex-col gap-2">
+            <h5 class="w-[561px] font-bold text-orange-600 text-2xl">
+              Checkout
+            </h5>
+            <h3 class="font-bold text-[40px]">
+              When you done check out and get it delivered.
+            </h3>
+            <p class="text-2xl">
+              When you done check out and get it delivered with ease.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="h-[516px] bg-[url(./imgs/bg-two.png)] flex flex-col justify-center items-center gap-12 text-white"
+      >
+        <h3 class="font-bold font text-3xl">Download the app now.</h3>
+        <p class="text-2xl">
+          Available on your favorite store. Start your premium experience now
+        </p>
+        <div class="flex gap-9 justify-center">
+          <button
+            class="bg-orange-600 px-8 rounded-3xl py-3 transition font-bold hover:bg-orange-500 cursor-pointer"
+          >
+            Playstore
+          </button>
+          <button
+            class="px-8 rounded-3xl py-3 transition font-bold border-solid border-2 hover:scale-[1.01] cursor-pointer"
+          >
+            App Store
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="flex w-[1440px] px-[70px] h-28 items-center mx-auto justify-between"
+    >
+      <a href="/"><img src="./imgs/logo.png" alt="Bella Onojie logo" /></a>
+      <ul class="flex gap-7">
+        <a href="/">
+          <i class="fa-brands fa-2xl fa-twitter" style="color: #fa4a0c"></i>
+        </a>
+        <a href="/">
+          <i class="fa-brands fa-2xl fa-facebook" style="color: #fa4a0c"></i>
+        </a>
+        <a href="/">
+          <i class="fa-brands fa-2xl fa-instagram" style="color: #fa4a0c"></i>
+        </a>
+      </ul>
+      <p>Copywright 2020 Bella Onojie.com</p>
+    </footer>
+  </body>
+</html>
