@@ -31,46 +31,56 @@
     </script>
     <title>Countries</title>
   </head>
-  <body class=" text-bgDark dark:bg-primary dark:text-white ">
+  <body class="text-bgDark dark:bg-primary dark:text-white">
     <header
-      class="mx-auto flex md:px-20 p-3 w-full max-w-[1440px] justify-between  dark:bg-primary md:py-10"
+      class="mx-auto flex md:px-20 p-3 w-full max-w-[1440px] justify-between dark:bg-primary md:py-10"
     >
       <a href="/">
-        <h3 class="text-xl md:text-2xl font-bold">
-          Where in the world ?
-        </h3>
+        <h3 class="text-xl md:text-2xl font-bold">Where in the world ?</h3>
       </a>
-      <button
-        class="text-xs items-center md:font-bold"
-        id="dark"
-      >
+      <button class="text-xs items-center md:font-bold" id="dark">
         <i class="fa-solid fa-moon dark:text-white"></i>
         Dark Mode
       </button>
     </header>
     <main
-      class="dark:bg-bgDark text-sm p-3 max-w-[1440px] w-full mx-auto text-clak  md:px-20 md:py-10"
+      class="dark:bg-bgDark text-sm p-3 max-w-[1440px] w-full mx-auto text-clak md:px-20 md:py-10"
     >
       <section>
-        <input
-          placeholder="Search for a country…"
-          type="text"
-          class="outline-none border-[1px] border-solid border-bgDark rounded-lg h-12 w-full px-2 dark:bg-primary md:w-[480px]"
-        />
-        <div class="w-full justify-center md:justify-between   dark:bgDark flex flex-wrap  ">
-          <div class=" mt-10  w-[264px] h-[336px]  border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary   ">
-                <img class="w-full rounded-md" src="./flag.png" alt="">
-               <div class="p-2 text-[14px]" >
-                <h3 class="font-bold text-xl mb-2" >Germany</h3>
-                <p><b>Population:  </b><span>125 426 34</span></p>
-                <p><b>Region:  </b><span>America</span></p>
-                <p><b>Capital:  </b><span>Brazil</span></p>
-               </div>
+        <div>
+          <input
+            placeholder="Search for a country…"
+            type="text"
+            class="outline-none border-[1px] border-solid border-bgDark rounded-lg h-12 w-full px-2 dark:bg-primary md:w-[480px]"
+          />
+          <select name="" id=""></select>
+        </div>
+        <div
+          class="w-full justify-center md:justify-between dark:bgDark flex flex-wrap"
+        >
+          <div
+            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
+          >
+            <img class="w-full rounded-md" src="./flag.png" alt="" />
+            <div class="p-2 text-[14px]">
+              <h3 class="font-bold text-xl mb-2">Germany</h3>
+              <p><b>Population: </b><span>125 426 34</span></p>
+              <p><b>Region: </b><span>America</span></p>
+              <p><b>Capital: </b><span>Brazil</span></p>
+            </div>
           </div>
-          <div class="  mt-10  w-[264px] h-[336px]  border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary   "></div>
-          <div class="  mt-10  w-[264px] h-[336px]  border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary   "></div>
-          <div class="  mt-10  w-[264px] h-[336px]  border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary   "></div>
-          <div class="  mt-10  w-[264px] h-[336px]  border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary   "></div>
+          <div
+            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
+          ></div>
+          <div
+            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
+          ></div>
+          <div
+            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
+          ></div>
+          <div
+            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
+          ></div>
         </div>
       </section>
     </main>
