@@ -33,11 +33,13 @@
   </head>
   <body class="text-bgDark dark:bg-primary dark:text-white">
     <header
-      class="mx-auto flex md:px-20 p-3 w-full max-w-[1440px] justify-between dark:bg-primary md:py-10"
+      class="sticky top-0 mx-auto p-3 bg-gray-100 opacity-90 flex md:px-20 w-full max-w-[1440px] justify-between dark:bg-primary md:py-5"
     >
+      <!-- Logo  -->
       <a href="/">
         <h3 class="text-xl md:text-2xl font-bold">Where in the world ?</h3>
       </a>
+      <!-- Dark mode theme uchun button -->
       <button class="text-xs items-center md:font-bold" id="dark">
         <i class="fa-solid fa-moon dark:text-white"></i>
         Dark Mode
@@ -47,41 +49,34 @@
       class="dark:bg-bgDark text-sm p-3 max-w-[1440px] w-full mx-auto text-clak md:px-20 md:py-10"
     >
       <section>
-        <div>
+        <!--  search Input and Region select uchun div  -->
+        <div
+          class="gap-4 flex justify-between md:flex-row flex-col items-center"
+        >
           <input
+            id="input"
             placeholder="Search for a country…"
             type="text"
-            class="outline-none border-[1px] border-solid border-bgDark rounded-lg h-12 w-full px-2 dark:bg-primary md:w-[480px]"
+            class="outline-none border-[1px] border-bgDark rounded-lg h-12 w-full px-2 dark:bg-primary md:w-[480px]"
           />
-          <select name="" id=""></select>
-        </div>
-        <div
-          class="w-full justify-center md:justify-between dark:bgDark flex flex-wrap"
-        >
-          <div
-            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
+          <select
+            class="dark:bg-primary border-[1px] border-solid border-bgDark px-5 h-12 w-full rounded-lg md:w-44"
+            name=""
+            id="select"
           >
-            <img class="w-full rounded-md" src="./flag.png" alt="" />
-            <div class="p-2 text-[14px]">
-              <h3 class="font-bold text-xl mb-2">Germany</h3>
-              <p><b>Population: </b><span>125 426 34</span></p>
-              <p><b>Region: </b><span>America</span></p>
-              <p><b>Capital: </b><span>Brazil</span></p>
-            </div>
-          </div>
-          <div
-            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
-          ></div>
-          <div
-            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
-          ></div>
-          <div
-            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
-          ></div>
-          <div
-            class="mt-10 w-[264px] h-[336px] border-2 border-gray-200 rounded-md dark:border-none dark:bg-primary"
-          ></div>
+            <option selected>All</option>
+            <option>Africa</option>
+            <option>America</option>
+            <option>Asia</option>
+            <option>Europe</option>
+            <option>Oceania</option>
+          </select>
         </div>
+        <!--  Cardlar davlatlar uchun  -->
+        <div
+          id="countries"
+          class="w-full justify-center md:justify-between dark:bgDark flex flex-wrap"
+        ></div>
       </section>
     </main>
 
